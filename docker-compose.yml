@@ -1,0 +1,35 @@
+version: "3"
+services:
+  datascience-notebook:
+      image:            allani94/jupyter-notebook-all-sync:latest
+      volumes:
+        - ./jupyternb/:/home/jovyan/work
+      ports:
+        - 8880:8888
+      container_name:   datascience-notebook-container
+  rstudio:
+      container_name: rstudio
+      volumes:
+        - './rstudio/:/home/`whoami`'
+      environment:
+        - PASSWORD=secret
+      ports:
+        - '8787:8787'
+      image: allani94/rstudio-all-sync:latest
+  oracle-database:
+      image: allani94/oracle-database-all-sync:latest
+      environment:
+        - DB_SID=MYORCL
+        - DB_PDB=MYPDB
+        - DB_MEMORY=3GB
+        - DB_PASSWD=welcome1
+        - DB_DOMAIN=my.domain.com
+      volumes:
+        - ./oracle:/ORCL
+      ports:
+        - 1531:1521
+  simple_tensorflow_serving:
+      restart: always
+      image: allani94/tensorflow-all-sync:latest
+      ports:
+        - "8500:8500"
