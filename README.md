@@ -43,7 +43,9 @@ In meinem Fall ist:  8ff41e982482335d8c3b763635a4d6a8e42229a24ad240de
 #### Oracle Database
 
 1. Zum Zeigen die Protokolle des Oracle-Containers 
- `docker logs -f d66`  
+
+ `docker logs -f d66`
+ 
 d66: ist  die erste 3 Zifferm vom Oracle-Container, oder kann  der name des Containers geschrieben werden
 2. Zum Ausführen bestimmter Befehle  im Container mit hilfe Kommandozeileninterpreter
 `docker exec -it d66  bash -c "source /home/oracle/.bashrc; sqlplus /nolog"`   
