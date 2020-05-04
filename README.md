@@ -1,5 +1,8 @@
 # AI-Lab Syncwork
 
+![nur ein Beispiel](https://www.google.com/imgres?imgurl=https%3A%2F%2Fimages.vogel.de%2Fvogelonline%2Fbdb%2F1429000%2F1429045%2F4.jpg&imgrefurl=https%3A%2F%2Fwww.dev-insider.de%2Fcontainer-idee-architektur-und-use-cases-a-735234%2F&tbnid=_UJ8SSACpQcFDM&vet=12ahUKEwiLtoD4m5rpAhVK16QKHQbzCwgQMygCegUIARDxAQ..i&docid=7HpLuR1MWd3iUM&w=300&h=300&q=docker%20image&client=firefox-b-d&ved=2ahUKEwiLtoD4m5rpAhVK16QKHQbzCwgQMygCegUIARDxAQ#h=300&imgdii=-JrQDjZWlqWJZM:&vet=12ahUKEwiLtoD4m5rpAhVK16QKHQbzCwgQMygCegUIARDxAQ..i&w=300 "Beispielbild")
+
+
 Dieses Compose File  stellt die folgenden Services zur Verfügung:
 * Oracle Database
 * TensorFlow
