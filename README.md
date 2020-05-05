@@ -131,7 +131,7 @@ GRANT ALL PRIVILEGES TO dummy;
  
  ![](images/portainer_portal.png)
  
- ![](images/portainer_image.png)
+
 
 ## Noch nützliche Befehle:  :wink:
 
