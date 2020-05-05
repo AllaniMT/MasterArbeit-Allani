@@ -86,8 +86,13 @@ Ps: Statt  `<CONTAINER-NAME>` können die ersten 3 Ziffern  von der “Image ID�
 Das passiert, wenn man eine Image löschen will, während ein Container von diesem Image gleichzeitig läuft.
 
 * Das  Anzeigen aller Image, die auf dem Rechner benutzt werden können
+```
 
-`docker images`
+docker images
+
+```
+
+
 
 * Das Anzeigen aller auf dem Rechner laufenden Container (Beim hinzufügen  `–a` werden die pausierten Container auch mit gezeigt) 
 
