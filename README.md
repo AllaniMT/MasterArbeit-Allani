@@ -124,7 +124,7 @@ Rocker rmi   <IMAGE-NAME-ODER-IMAGE-ID>
 
 Hinw: Statt  `<CONTAINER-NAME>` können die ersten 3 Ziffern  von der “Image ID“ geschrieben werden. 
 
-==>	In dem Fall, dass das Image nicht gelöscht werden kann, muss es zuerst gestoppt werden (`Docker stop <Image-NAME>`). Oder die Option `–-force` hinzufügen. (Z.B  `docker rmi  723 --force`).
+-->	In dem Fall, dass das Image nicht gelöscht werden kann, muss es zuerst gestoppt werden (`Docker stop <Image-NAME>`). Oder die Option `–-force` hinzufügen. (Z.B  `docker rmi  723 --force`).
 
 Das passiert, wenn man eine Image löschen will, während ein Container von diesem Image gleichzeitig läuft.
 
