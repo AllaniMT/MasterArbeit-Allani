@@ -142,6 +142,6 @@ docker images
 
 ```
 
-docker images
+docker ps -a
 
 ```
