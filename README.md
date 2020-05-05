@@ -10,7 +10,7 @@ Dieses Compose File  stellt die folgenden Services zur Verfügung:
 * Jupyter Notebook
 * RStudio
 
-> Um die Services auszuführen,  muss die Software “Docker“ auf dem Rechner installiert sein. (Falls DOcker noch nicht installiert ist: [Docker!](https://www.docker.com/) )und seine Kommandobefehle ausgeführt werden können. Mit dem Befehl `docker version` ist es anzuschauen, dass Docker eingerichtet  ist und auf welche Version ausgeführt wird (Die Nutzung des Kommandozeileninterpreters  bleibt dem Nutzer überlassen  ). 
+> Um die Services auszuführen,  muss die Software “Docker“ auf dem Rechner installiert sein. (Falls DOcker noch nicht installiert ist: [Docker!](https://www.docker.com/) )und seine Kommandobefehle ausgeführt werden können. Mit dem Befehl `docker version` ist es anzuschauen, dass Docker eingerichtet  ist und auf welche Version ausgeführt wird (Die Nutzung des Kommandozeileninterpreters  bleibt dem Nutzer überlassen  :slightly_smiling_face: ). 
 
 > Dabei  ist es wichtig, mit dem "Docker Hub" Konto verbunden zu  sein. Der Befehl `docker login docker.io` dient zum einloggen ins Nutzerkonto. Hierbei wird das Username und das Passwort benötigt.
 
@@ -20,14 +20,16 @@ Dieses Compose File  stellt die folgenden Services zur Verfügung:
 
 > Die Services werden in den folgenden Port ausgeführt:
 
-* Oracle Database: 1531
-* TensotFlow: 8500
-* JupyterFlow: 8880
-* RStudio: 8787
+ - Oracle Database: 1531
+ - TensotFlow: 8500
+ - JupyterFlow: 8880
+ - RStudio: 8787
 
 
 Zum Beispiel ist das Service Jupyter Notebook auf “localhost:8080“ verfügbar.
+
 Falls es nicht möglich ist, die Images auf “Localhost“ auszuführen, ist  der Befehl `docker-machine ip default` auszuführen,  um die Docker Toolbox IP Adresse anzeigen zu lassen.
+
 Wenn die Services aufgehört werden müssen,  soll der Kommandobefehl `docker-compose down` im selben Ordner ausgeführt werden. 
 
 ## Ausführungseklärung
@@ -35,7 +37,7 @@ Wenn die Services aufgehört werden müssen,  soll der Kommandobefehl `docker-co
 #### RStudio
 Es wird dabei die Zugangdaten  gebraucht:
  * Username: rstudio
- * Passwort:  <DU-FINDEST-ES-IM-FILE>
+ * Passwort:  ES-BEFINDET-SICH IM YML FILE
 
 #### Jupyter Notebook
 Beim Verwenden des Service “Jupyter Notebook“, wird es das Token gebraucht. Welches in der Kommandozeile angezeigt wird. 
@@ -70,7 +72,8 @@ connect sys as sysdba;
 
 ```
  
-4. Passwort eingeben (Das sich im YML File befindet “Welcome“ ) 
+4. Passwort eingeben (Das sich im YML File befindet) 
+
 5. Um Oracle -Befehle ausführen zu eraluben
  
 ```
@@ -79,7 +82,7 @@ alter session set "_ORACLE_SCRIPT"=true;
 
 ```
 
-6. die Erstellung eines neuen  Users
+6. Die Erstellung eines neuen  Users
 
 ```
 
@@ -96,9 +99,9 @@ GRANT ALL PRIVILEGES TO dummy;
 
 ```
 
-## Noch nützliche Befehle: 
+## Noch nützliche Befehle:  :wink:
 
-* Um ein Bestimmtes Container zu löschen:
+* ein Bestimmtes Container löschen:
 
 ```
 
@@ -107,7 +110,8 @@ Docker rm <CONTAINER-NAME>
 ```
 
 Ps: Statt `<CONTAINER-NAME>` können die ersten 3 Ziffern  von der Container Id geschrieben werden. 
-=> In dem Fall, dass das Container nicht gelöscht werden kann, muss es zuerst gestoppt werden (`Docker stop <CONTAINER-NAME>`  Um das  Container zu pausieren). Oder die Option `–-force` hinzufügen. (Z.B `docker rm  f65 --force`).
+
+=> In dem Fall, dass das Container nicht gelöscht werden kann, muss es zuerst gestoppt werden (`Docker stop <CONTAINER-NAME>`  Um das  Container zu pausieren), oder die Option `–-force` hinzufügen. (Z.B `docker rm  f65 --force`).
 
 * Um ein Bestimmtes Image zu löschen:
 
@@ -118,7 +122,9 @@ Rocker rmi   <IMAGE-NAME-ODER-IMAGE-ID>
 ```
 
 Ps: Statt  `<CONTAINER-NAME>` können die ersten 3 Ziffern  von der “Image ID“ geschrieben werden. 
+
 =>	In dem Fall, dass das Image nicht gelöscht werden kann, muss es zuerst gestoppt werden (`Docker stop <Image-NAME>`). Oder die Option `–-force` hinzufügen. (Z.B  `docker rmi  723 --force`).
+
 Das passiert, wenn man eine Image löschen will, während ein Container von diesem Image gleichzeitig läuft.
 
 * Das  Anzeigen aller Image, die auf dem Rechner benutzt werden können
