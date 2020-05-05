@@ -32,7 +32,7 @@ Dieses Compose File  stellt die folgenden Services zur Verfügung:
 
 Zum Beispiel ist das Service Jupyter Notebook auf **localhost:8080** verfügbar.
 
-![](images/jupyter-localhost.png)
+![](images/jupyter_localhost.png)
 
 Falls es nicht möglich ist, die Images auf **Localhost** auszuführen, ist  der Befehl `docker-machine ip default` auszuführen,  um die Docker Toolbox IP Adresse anzeigen zu lassen.
 
@@ -152,7 +152,7 @@ docker images
 
 ```
 
-![](images/docker-images.png)
+![](images/docker_images.png)
 
 * Das Anzeigen aller auf dem Rechner laufenden Container (Beim Hinzufügen  `–a` werden die pausierten Container auch mit gezeigt) 
 
@@ -161,3 +161,5 @@ docker images
 docker ps -a
 
 ```
+
+![](images/docker_ps.png)
