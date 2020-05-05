@@ -10,7 +10,7 @@ Dieses Compose File  stellt die folgenden Services zur Verfügung:
 * Jupyter Notebook
 * RStudio
 
-> Um die Services auszuführen,  muss die Software **Docker** auf dem Rechner installiert sein. (Falls DOcker noch nicht installiert ist: [Docker!](https://www.docker.com/) )und seine Kommandobefehle ausgeführt werden können. Mit dem Befehl `docker version` ist es anzuschauen, dass Docker eingerichtet  ist und auf welche Version ausgeführt wird (Die Art des Kommandozeileninterpreters  bleibt dem Nutzer überlassen  :slightly_smiling_face: ). 
+> Um die Services auszuführen,  muss die Software **Docker** auf dem Rechner installiert sein (Falls Docker noch nicht installiert ist: [hier!](https://www.docker.com/) ist die Dokumentation )und seine Kommandobefehle ausgeführt werden können. Mit dem Befehl `docker version` ist es anzuschauen, dass Docker eingerichtet  ist und auf welche Version ausgeführt wird (Die Art des Kommandozeileninterpreters  bleibt dem Nutzer überlassen  :slightly_smiling_face: ). 
 
 > Dabei  ist es wichtig, mit dem **Docker Hub** Konto verbunden zu  sein. Der Befehl `docker login docker.io` dient zum einloggen ins Nutzerkonto. Hierbei wird das Username und das Passwort benötigt.
 
