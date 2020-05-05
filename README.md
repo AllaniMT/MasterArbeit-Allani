@@ -12,7 +12,11 @@ Dieses Compose File  stellt die folgenden Services zur Verfügung:
 
 > Um die Services auszuführen,  muss die Software **Docker** auf dem Rechner installiert sein (Falls Docker noch nicht installiert ist: [hier!](https://www.docker.com/) ist die Dokumentation )und seine Kommandobefehle ausgeführt werden können. Mit dem Befehl `docker version` ist es anzuschauen, dass Docker eingerichtet  ist und auf welche Version ausgeführt wird (Die Art des Kommandozeileninterpreters  bleibt dem Nutzer überlassen  :slightly_smiling_face: ). 
 
+![](images/docker_version.png)
+
 > Dabei  ist es wichtig, mit dem **Docker Hub** Konto verbunden zu  sein. Der Befehl `docker login docker.io` dient zum einloggen ins Nutzerkonto. Hierbei wird das Username und das Passwort benötigt.
+
+![](images/docker_login.png)
 
 > Jetzt muss dieser Ordner  heruntergeladen  und im  Kommandozeileninterpreter geöffnet werden.
 
@@ -28,6 +32,8 @@ Dieses Compose File  stellt die folgenden Services zur Verfügung:
 
 Zum Beispiel ist das Service Jupyter Notebook auf **localhost:8080** verfügbar.
 
+![](images/jupyter-localhost.png)
+
 Falls es nicht möglich ist, die Images auf **Localhost** auszuführen, ist  der Befehl `docker-machine ip default` auszuführen,  um die Docker Toolbox IP Adresse anzeigen zu lassen.
 
 Wenn die Services aufgehört werden müssen,  soll der Kommandobefehl `docker-compose down` im selben Ordner ausgeführt werden. 
@@ -38,10 +44,14 @@ Wenn die Services aufgehört werden müssen,  soll der Kommandobefehl `docker-co
 Es wird dabei die Zugangdaten  gebraucht:
  * Username: rstudio
  * Passwort:  ES-BEFINDET-SICH-IM-YML-FILE
+ 
+ ![](images/rstudio_loggin.png)
 
 #### Jupyter Notebook
 Beim Verwenden des Service **Jupyter Notebook**, wird es das Token gebraucht. Welches in der Kommandozeile angezeigt wird. 
 In meinem Fall ist:  8ff41e982482335d8c3b763635a4d6a8e42229a24ad240de
+
+![](images/jupyter_token.png)
 
 #### Tensorflow
 
@@ -100,6 +110,8 @@ GRANT ALL PRIVILEGES TO dummy;
 
 ```
 
+![](images/oracle_all.png)
+
 ## Noch nützliche Befehle:  :wink:
 
 - ein Bestimmtes Container löschen:
@@ -113,6 +125,8 @@ Docker rm <CONTAINER-NAME>
 Hinw: Statt `<CONTAINER-NAME>` können die ersten 3 Ziffern  von der Container Id geschrieben werden. 
 
 ==> In dem Fall, dass das Container nicht gelöscht werden kann, muss es zuerst gestoppt werden (`Docker stop <CONTAINER-NAME>`  Um das  Container zu pausieren), oder die Option `–-force` hinzufügen. (Z.B `docker rm  f65 --force`).
+
+![](images/docker_rm.png)
 
 - Ein Bestimmtes Image löschen:
 
@@ -128,6 +142,8 @@ Hinw: Statt  `<CONTAINER-NAME>` können die ersten 3 Ziffern  von der “Image I
 
 Das passiert, wenn man eine Image löschen will, während ein Container von diesem Image gleichzeitig läuft.
 
+![](images/docker_rmi.png)
+
 - Das  Anzeigen aller Image, die auf dem Rechner benutzt werden können
 
 ```
@@ -136,7 +152,7 @@ docker images
 
 ```
 
-
+![](images/docker-images.png)
 
 * Das Anzeigen aller auf dem Rechner laufenden Container (Beim Hinzufügen  `–a` werden die pausierten Container auch mit gezeigt) 
 
