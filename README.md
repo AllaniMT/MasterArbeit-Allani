@@ -12,11 +12,11 @@ Dieses Compose File  stellt die folgenden Services zur Verfügung:
 
 > Um die Services auszuführen,  muss die Software **Docker** auf dem Rechner installiert sein. (Falls DOcker noch nicht installiert ist: [Docker!](https://www.docker.com/) )und seine Kommandobefehle ausgeführt werden können. Mit dem Befehl `docker version` ist es anzuschauen, dass Docker eingerichtet  ist und auf welche Version ausgeführt wird (Die Art des Kommandozeileninterpreters  bleibt dem Nutzer überlassen  :slightly_smiling_face: ). 
 
-> Dabei  ist es wichtig, mit dem "Docker Hub" Konto verbunden zu  sein. Der Befehl `docker login docker.io` dient zum einloggen ins Nutzerkonto. Hierbei wird das Username und das Passwort benötigt.
+> Dabei  ist es wichtig, mit dem **Docker Hub** Konto verbunden zu  sein. Der Befehl `docker login docker.io` dient zum einloggen ins Nutzerkonto. Hierbei wird das Username und das Passwort benötigt.
 
 > Jetzt muss dieser Ordner  heruntergeladen  und im  Kommandozeileninterpreter geöffnet werden.
 
-> Der Kommandobefehl `docker-compose up` dient zur Ausführung der oben genannten  Services. Im hintergrund wird die  von Docker  Befehle “pull“  und  “run“ ausgeführt,  um die Docker Images  von Docker hub zu pullen und die entsprechenden Container  in den geeigneten Port auszuführen, die im “Docker-compose.yml“  file festgestellt wurden.
+> Der Kommandobefehl `docker-compose up` dient zur Ausführung der oben genannten  Services. Im hintergrund wird die  von Docker  Befehle **pull**  und  **run** ausgeführt,  um die Docker Images  von Docker hub zu pullen und die entsprechenden Container  in den geeigneten Port auszuführen, die im **Docker-compose.yml**  file festgestellt wurden.
 
 > Die Services werden in den folgenden Port ausgeführt:
 
@@ -26,7 +26,7 @@ Dieses Compose File  stellt die folgenden Services zur Verfügung:
  - RStudio: 8787
 
 
-Zum Beispiel ist das Service Jupyter Notebook auf “localhost:8080“ verfügbar.
+Zum Beispiel ist das Service Jupyter Notebook auf **localhost:8080** verfügbar.
 
 Falls es nicht möglich ist, die Images auf “Localhost“ auszuführen, ist  der Befehl `docker-machine ip default` auszuführen,  um die Docker Toolbox IP Adresse anzeigen zu lassen.
 
@@ -40,7 +40,7 @@ Es wird dabei die Zugangdaten  gebraucht:
  * Passwort:  ES-BEFINDET-SICH IM YML FILE
 
 #### Jupyter Notebook
-Beim Verwenden des Service “Jupyter Notebook“, wird es das Token gebraucht. Welches in der Kommandozeile angezeigt wird. 
+Beim Verwenden des Service **Jupyter Notebook** , wird es das Token gebraucht. Welches in der Kommandozeile angezeigt wird. 
 In meinem Fall ist:  8ff41e982482335d8c3b763635a4d6a8e42229a24ad240de
 
 #### Tensorflow
@@ -56,6 +56,7 @@ docker logs -f d66
 ```
  
 d66: ist  die erste 3 Zifferm vom Oracle-Container, oder kann  der name des Containers geschrieben werden
+
 2. Zum Ausführen bestimmter Befehle  im Container mit hilfe Kommandozeileninterpreter
 
 ```
@@ -64,7 +65,7 @@ docker exec -it d66  bash -c "source /home/oracle/.bashrc; sqlplus /nolog"
 
 ```
 
-3. die Erstellung einer Verbindung mit der Datenbank 
+3. Die Erstellung einer Verbindung mit der Datenbank 
 
 ```
 
@@ -109,7 +110,7 @@ Docker rm <CONTAINER-NAME>
 
 ```
 
-Ps: Statt `<CONTAINER-NAME>` können die ersten 3 Ziffern  von der Container Id geschrieben werden. 
+Hinw: Statt `<CONTAINER-NAME>` können die ersten 3 Ziffern  von der Container Id geschrieben werden. 
 
 ==> In dem Fall, dass das Container nicht gelöscht werden kann, muss es zuerst gestoppt werden (`Docker stop <CONTAINER-NAME>`  Um das  Container zu pausieren), oder die Option `–-force` hinzufügen. (Z.B `docker rm  f65 --force`).
 
@@ -121,7 +122,7 @@ Rocker rmi   <IMAGE-NAME-ODER-IMAGE-ID>
 
 ```
 
-Ps: Statt  `<CONTAINER-NAME>` können die ersten 3 Ziffern  von der “Image ID“ geschrieben werden. 
+Hinw: Statt  `<CONTAINER-NAME>` können die ersten 3 Ziffern  von der “Image ID“ geschrieben werden. 
 
 ==>	In dem Fall, dass das Image nicht gelöscht werden kann, muss es zuerst gestoppt werden (`Docker stop <Image-NAME>`). Oder die Option `–-force` hinzufügen. (Z.B  `docker rmi  723 --force`).
 
