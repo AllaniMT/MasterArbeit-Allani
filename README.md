@@ -1,6 +1,6 @@
 # AI-Lab Syncwork
 
-![nur ein Beispiel](https://assets.t3n.sc/magazin/wp-content/uploads/2015/11/final_docker_01.jpg?auto=format&fit=crop&h=348&ixlib=php-2.3.0&w=620 "Beispielbild")
+![nur ein Beispiel](https://www.kindpng.com/picc/m/27-272382_1300px-docker-container-engine-logo-docker-hub-hd.png "Beispielbild")
 
 ## Erläuterung
 
@@ -28,7 +28,7 @@ Dieses Compose File  stellt die folgenden Services zur Verfügung:
 
 Zum Beispiel ist das Service Jupyter Notebook auf **localhost:8080** verfügbar.
 
-Falls es nicht möglich ist, die Images auf “Localhost“ auszuführen, ist  der Befehl `docker-machine ip default` auszuführen,  um die Docker Toolbox IP Adresse anzeigen zu lassen.
+Falls es nicht möglich ist, die Images auf **Localhost** auszuführen, ist  der Befehl `docker-machine ip default` auszuführen,  um die Docker Toolbox IP Adresse anzeigen zu lassen.
 
 Wenn die Services aufgehört werden müssen,  soll der Kommandobefehl `docker-compose down` im selben Ordner ausgeführt werden. 
 
@@ -37,15 +37,15 @@ Wenn die Services aufgehört werden müssen,  soll der Kommandobefehl `docker-co
 #### RStudio
 Es wird dabei die Zugangdaten  gebraucht:
  * Username: rstudio
- * Passwort:  ES-BEFINDET-SICH IM YML FILE
+ * Passwort:  ES-BEFINDET-SICH-IM-YML-FILE
 
 #### Jupyter Notebook
-Beim Verwenden des Service **Jupyter Notebook** , wird es das Token gebraucht. Welches in der Kommandozeile angezeigt wird. 
+Beim Verwenden des Service **Jupyter Notebook**, wird es das Token gebraucht. Welches in der Kommandozeile angezeigt wird. 
 In meinem Fall ist:  8ff41e982482335d8c3b763635a4d6a8e42229a24ad240de
 
 #### Tensorflow
 
-#### Oracle Database
+#### Oracle Database ([Für mehr Informationen!](https://hub.docker.com/_/oracle-database-enterprise-edition))
 
 1. Zum Zeigen die Protokolle des Oracle-Containers 
 
@@ -102,7 +102,7 @@ GRANT ALL PRIVILEGES TO dummy;
 
 ## Noch nützliche Befehle:  :wink:
 
-* ein Bestimmtes Container löschen:
+- ein Bestimmtes Container löschen:
 
 ```
 
@@ -114,7 +114,7 @@ Hinw: Statt `<CONTAINER-NAME>` können die ersten 3 Ziffern  von der Container I
 
 ==> In dem Fall, dass das Container nicht gelöscht werden kann, muss es zuerst gestoppt werden (`Docker stop <CONTAINER-NAME>`  Um das  Container zu pausieren), oder die Option `–-force` hinzufügen. (Z.B `docker rm  f65 --force`).
 
-* Um ein Bestimmtes Image zu löschen:
+- Ein Bestimmtes Image löschen:
 
 ```
 
@@ -124,11 +124,11 @@ Rocker rmi   <IMAGE-NAME-ODER-IMAGE-ID>
 
 Hinw: Statt  `<CONTAINER-NAME>` können die ersten 3 Ziffern  von der “Image ID“ geschrieben werden. 
 
--->	In dem Fall, dass das Image nicht gelöscht werden kann, muss es zuerst gestoppt werden (`Docker stop <Image-NAME>`). Oder die Option `–-force` hinzufügen. (Z.B  `docker rmi  723 --force`).
+==>	In dem Fall, dass das Image nicht gelöscht werden kann, muss es zuerst gestoppt werden (`Docker stop <Image-NAME>`). Oder die Option `–-force` hinzufügen. (Z.B  `docker rmi  723 --force`).
 
 Das passiert, wenn man eine Image löschen will, während ein Container von diesem Image gleichzeitig läuft.
 
-* Das  Anzeigen aller Image, die auf dem Rechner benutzt werden können
+- Das  Anzeigen aller Image, die auf dem Rechner benutzt werden können
 
 ```
 
@@ -138,7 +138,7 @@ docker images
 
 
 
-* Das Anzeigen aller auf dem Rechner laufenden Container (Beim hinzufügen  `–a` werden die pausierten Container auch mit gezeigt) 
+* Das Anzeigen aller auf dem Rechner laufenden Container (Beim Hinzufügen  `–a` werden die pausierten Container auch mit gezeigt) 
 
 ```
 
