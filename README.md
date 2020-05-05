@@ -9,6 +9,7 @@ Dieses Compose File  stellt die folgenden Services zur Verfügung:
 * TensorFlow
 * Jupyter Notebook
 * RStudio
+* Portainer
 
 > Um die Services auszuführen,  muss die Software **Docker** auf dem Rechner installiert sein (Falls Docker noch nicht installiert ist: [hier!](https://www.docker.com/) ist die Dokumentation )und seine Kommandobefehle ausgeführt werden können. Mit dem Befehl `docker version` ist es anzuschauen, dass Docker eingerichtet  ist und auf welche Version ausgeführt wird (Die Art des Kommandozeileninterpreters  bleibt dem Nutzer überlassen  :slightly_smiling_face: ). 
 
@@ -28,6 +29,7 @@ Dieses Compose File  stellt die folgenden Services zur Verfügung:
  - TensotFlow: 8500
  - JupyterFlow: 8880
  - RStudio: 8787
+ - Portainer: 9000
 
 
 Zum Beispiel ist das Service Jupyter Notebook auf **localhost:8080** verfügbar.
@@ -111,6 +113,21 @@ GRANT ALL PRIVILEGES TO dummy;
 ```
 
 ![](images/oracle_all.png)
+
+#### Portainer
+
+> In dem Fall, dass man die nicht mit den Kommandobefehlen arbeiten will, kommt hier das Image **Portainer**  zum Einsatz. **Portainer**
+ ist ein Docker-Image, das zur graphischen verwaltung von Docker-Container dient.
+ 
+ Dabei wird benötigt, ein neues Volume zu erstellen.
+ 
+ ```
+ 
+ docker volume create portainer_data
+ 
+ ```
+ 
+ Das Service **Portainer** steht unter **localhost:9000** zur Verfügung.
 
 ## Noch nützliche Befehle:  :wink:
 
