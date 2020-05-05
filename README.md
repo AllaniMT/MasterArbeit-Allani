@@ -119,7 +119,7 @@ GRANT ALL PRIVILEGES TO dummy;
 > In dem Fall, dass man die nicht mit den Kommandobefehlen arbeiten will, kommt hier das Image **Portainer**  zum Einsatz. **Portainer**
  ist ein Docker-Image, das zur graphischen verwaltung von Docker-Container dient.
  
- Dabei wird benötigt, ein neues Volume zu erstellen.
+ * Dabei wird benötigt, ein neues Volume zu erstellen.
  
  ```
  
@@ -127,7 +127,11 @@ GRANT ALL PRIVILEGES TO dummy;
  
  ```
  
- Das Service **Portainer** steht unter **localhost:9000** zur Verfügung.
+ * Das Service **Portainer** steht unter **localhost:9000** zur Verfügung.
+ 
+ ![](images/portainer_portal.png)
+ 
+ ![](images/portainer_image.png)
 
 ## Noch nützliche Befehle:  :wink:
 
