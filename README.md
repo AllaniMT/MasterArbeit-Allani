@@ -10,7 +10,7 @@ Dieses Compose File  stellt die folgenden Services zur Verfügung:
 * Jupyter Notebook
 * RStudio
 
-> Um die Services auszuführen,  muss die Software “Docker“ auf dem Rechner installiert sein. (Falls DOcker noch nicht installiert ist: [Docker!](https://www.docker.com/) )und seine Kommandobefehle ausgeführt werden können. Mit dem Befehl `docker version` ist es anzuschauen, dass Docker eingerichtet  ist und auf welche Version ausgeführt wird (Die Nutzung des Kommandozeileninterpreters  bleibt dem Nutzer überlassen  :slightly_smiling_face: ). 
+> Um die Services auszuführen,  muss die Software **Docker** auf dem Rechner installiert sein. (Falls DOcker noch nicht installiert ist: [Docker!](https://www.docker.com/) )und seine Kommandobefehle ausgeführt werden können. Mit dem Befehl `docker version` ist es anzuschauen, dass Docker eingerichtet  ist und auf welche Version ausgeführt wird (Die Art des Kommandozeileninterpreters  bleibt dem Nutzer überlassen  :slightly_smiling_face: ). 
 
 > Dabei  ist es wichtig, mit dem "Docker Hub" Konto verbunden zu  sein. Der Befehl `docker login docker.io` dient zum einloggen ins Nutzerkonto. Hierbei wird das Username und das Passwort benötigt.
 
@@ -111,7 +111,7 @@ Docker rm <CONTAINER-NAME>
 
 Ps: Statt `<CONTAINER-NAME>` können die ersten 3 Ziffern  von der Container Id geschrieben werden. 
 
-=> In dem Fall, dass das Container nicht gelöscht werden kann, muss es zuerst gestoppt werden (`Docker stop <CONTAINER-NAME>`  Um das  Container zu pausieren), oder die Option `–-force` hinzufügen. (Z.B `docker rm  f65 --force`).
+==> In dem Fall, dass das Container nicht gelöscht werden kann, muss es zuerst gestoppt werden (`Docker stop <CONTAINER-NAME>`  Um das  Container zu pausieren), oder die Option `–-force` hinzufügen. (Z.B `docker rm  f65 --force`).
 
 * Um ein Bestimmtes Image zu löschen:
 
@@ -123,7 +123,7 @@ Rocker rmi   <IMAGE-NAME-ODER-IMAGE-ID>
 
 Ps: Statt  `<CONTAINER-NAME>` können die ersten 3 Ziffern  von der “Image ID“ geschrieben werden. 
 
-=>	In dem Fall, dass das Image nicht gelöscht werden kann, muss es zuerst gestoppt werden (`Docker stop <Image-NAME>`). Oder die Option `–-force` hinzufügen. (Z.B  `docker rmi  723 --force`).
+==>	In dem Fall, dass das Image nicht gelöscht werden kann, muss es zuerst gestoppt werden (`Docker stop <Image-NAME>`). Oder die Option `–-force` hinzufügen. (Z.B  `docker rmi  723 --force`).
 
 Das passiert, wenn man eine Image löschen will, während ein Container von diesem Image gleichzeitig läuft.
 
