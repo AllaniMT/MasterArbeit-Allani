@@ -85,7 +85,7 @@ connect sys as sysdba;
 
 ```
  
-4. Passwort eingeben (Das sich im YML File befindet) 
+4. Passwort eingeben (Das sich im YML File befindet) <br>
 
 5. Um Oracle -Befehle ausführen zu eraluben
  
