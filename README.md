@@ -45,7 +45,7 @@ Wenn die Services aufgehört werden müssen,  soll der Kommandobefehl `docker-co
 #### RStudio
 Es wird dabei die Zugangdaten  gebraucht:
  * Username: rstudio
- * Passwort:  ES-BEFINDET-SICH-IM-YML-FILE
+ * Passwort:  ES-BEFINDET-SICH-IM-YML-FILE hat man als neuer Mitarbeiter von Peggy
  
  ![](images/rstudio_loggin.png)
 
