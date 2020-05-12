@@ -45,7 +45,7 @@ Wenn die Services aufgehört werden müssen,  soll der Kommandobefehl `docker-co
 #### RStudio
 Es wird dabei die Zugangdaten  gebraucht:
  * Username: rstudio
- * Passwort:  ES-BEFINDET-SICH-IM-YML-FILE
+ * Passwort:  ES-BEFINDET-SICH-IM-YML-FILE hat man als neuer Mitarbeiter von Peggy
  
  ![](images/rstudio_loggin.png)
 
@@ -85,7 +85,7 @@ connect sys as sysdba;
 
 ```
  
-4. Passwort eingeben (Das sich im YML File befindet) 
+4. Passwort eingeben (Das sich im YML File befindet) <br>
 
 5. Um Oracle -Befehle ausführen zu eraluben
  
@@ -119,7 +119,7 @@ GRANT ALL PRIVILEGES TO dummy;
 > In dem Fall, dass man die nicht mit den Kommandobefehlen arbeiten will, kommt hier das Image **Portainer**  zum Einsatz. **Portainer**
  ist ein Docker-Image, das zur graphischen verwaltung von Docker-Container dient.
  
- Dabei wird benötigt, ein neues Volume zu erstellen.
+ * Dabei wird benötigt, ein neues Volume zu erstellen.
  
  ```
  
@@ -127,7 +127,11 @@ GRANT ALL PRIVILEGES TO dummy;
  
  ```
  
- Das Service **Portainer** steht unter **localhost:9000** zur Verfügung.
+ * Das Service **Portainer** steht unter **localhost:9000** zur Verfügung.
+ 
+ ![](images/portainer_portal.png)
+ 
+
 
 ## Noch nützliche Befehle:  :wink:
 
