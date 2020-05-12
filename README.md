@@ -28,7 +28,7 @@ Dieses Compose File  stellt die folgenden Services zur Verfügung:
 
  - Oracle Database: 1531
  - TensotFlow: 8500
- - JupyterFlow: 8880
+ - Jupyter Notebook: 8880
  - RStudio: 8787
  - Portainer: 9000
  - dataiku: 10000
