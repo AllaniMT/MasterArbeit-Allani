@@ -10,6 +10,7 @@ Dieses Compose File  stellt die folgenden Services zur Verfügung:
 * Jupyter Notebook
 * RStudio
 * Portainer
+* dataiku
 
 > Um die Services auszuführen,  muss die Software **Docker** auf dem Rechner installiert sein (Falls Docker noch nicht installiert ist: [hier!](https://www.docker.com/) ist die Dokumentation )und seine Kommandobefehle ausgeführt werden können. Mit dem Befehl `docker version` ist es anzuschauen, dass Docker eingerichtet  ist und auf welche Version ausgeführt wird (Die Art des Kommandozeileninterpreters  bleibt dem Nutzer überlassen  :slightly_smiling_face: ). 
 
@@ -30,6 +31,7 @@ Dieses Compose File  stellt die folgenden Services zur Verfügung:
  - JupyterFlow: 8880
  - RStudio: 8787
  - Portainer: 9000
+ - dataiku: 10000
 
 
 Zum Beispiel ist das Service Jupyter Notebook auf **localhost:8080** verfügbar.
@@ -131,11 +133,19 @@ GRANT ALL PRIVILEGES TO dummy;
  
  ![](images/portainer_portal.png)
  
-
+ #### Dataiku
+ 
+ * Dabei wird nur das Anmelden mit dem dataiku-Konto gebraucht :wink:
+ 
+ * Das Service **Dataiku** steht unter **localhost:10000** zur Verfügung.
+ 
+![](images/dataiku_portal.png)
 
 ## Noch nützliche Befehle:  :wink:
 
 - ein Bestimmtes Container löschen:
+
+![](images/dataiku_portal.png)
 
 ```
 
