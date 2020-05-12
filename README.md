@@ -145,7 +145,6 @@ GRANT ALL PRIVILEGES TO dummy;
 
 - ein Bestimmtes Container löschen:
 
-![](images/dataiku_portal.png)
 
 ```
 
