@@ -133,9 +133,13 @@ GRANT ALL PRIVILEGES TO dummy;
  
  ![](images/portainer_portal.png)
  
- #### Portainer
+ #### Dataiku
  
- Dabei wird nur das Anmelden mit dem dataiku-Konto gebraucht :wink:
+ * Dabei wird nur das Anmelden mit dem dataiku-Konto gebraucht :wink:
+ 
+ * Das Service **Dataiku** steht unter **localhost:10000** zur Verfügung.
+ 
+![](images/dataiku_portal.png)
 
 ## Noch nützliche Befehle:  :wink:
 
