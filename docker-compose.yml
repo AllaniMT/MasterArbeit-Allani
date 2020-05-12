@@ -33,7 +33,7 @@ services:
       image: allani94/tensorflow-all-sync:latest
       ports:
         - "8500:8500"
-   portainer:
+  portainer:
       container_name: portainer
       deploy:
         replicas: 1
@@ -46,3 +46,9 @@ services:
       volumes:
       - ./portainer:/var/run/docker.sock
       - ./portainer_data:/data
+  dataiku:
+    image: dataiku/dss
+    ports:
+    - 10000:10000
+    volumes:
+    - ./portainer:/home/dataiku/dss
